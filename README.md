@@ -14,7 +14,6 @@ entre páginas.
 ## 👥 Integrantes
 
   Integrante                          RA
-  ---------------------------- ---------
   Diogo Calegari dos Reis        2766973 <br>
   João Antonio Carboni Gomes     2767058
 
@@ -43,6 +42,7 @@ Desenvolver uma aplicação web funcional utilizando React.js capaz de:
 -   **AJAX / Fetch API**
 -   **API JSON**
 -   **Git e GitHub**
+-   **Visual Studio Code**
 
 ### Hook / funcionalidade do React.js
 
