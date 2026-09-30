@@ -194,27 +194,6 @@ mantendo uma evolução contínua da aplicação.
 
 ------------------------------------------------------------------------
 
-## 👨‍💻 Divisão de responsabilidades
-
-### Diogo Calegari dos Reis
-
--   Desenvolvimento de funcionalidades do projeto;
--   Implementação de componentes;
--   Integração com a API;
--   Testes e correções.
-
-### João Antonio Carboni Gomes
-
--   Desenvolvimento de funcionalidades do projeto;
--   Implementação de componentes;
--   Integração com a API;
--   Testes e correções.
-
-> As responsabilidades poderão ser ajustadas durante o desenvolvimento.
-> Cada integrante deverá possuir uma parte bem definida da aplicação.
-
-------------------------------------------------------------------------
-
 ## 📚 Requisitos da disciplina
 
 O projeto atende às orientações propostas para o **Projeto 1 ---

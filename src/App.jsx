@@ -1,36 +1,56 @@
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [valor, setValor] = useState('')
+  const [origem, setOrigem] = useState('BRL')
+  const [destino, setDestino] = useState('USD')
 
   return (
-    <>
-      <section id="center">
-        <div>
-          <h1>Olá, meus amigos!</h1>
-            <button
-            type="button"
-            className="counter"
-            onClick={() => {setCount((count) => count + 1)
+    <main>
+      <h1>Conversor de Moedas</h1>
+      <p>Converta valores entre diferentes moedas.</p>
 
-              if (count === 9) {
-                alert('Você clicou 10 vezes!')
-                setCount(0)
-                alert('Sua contagem foi reiniciada')
-                alert("Seu processador está 109 graus celsius, você precisa desligar o computador imediatamente!")
-              }
-            }}
-          >
-            Clique aqui
-          </button>
-          <p>Você apertou no botão {count} vezes</p>
-        </div>
-      </section>
-    </>
+      <div>
+        <label>Valor:</label>
+        <input
+          type="number"
+          value={valor}
+          onChange={(e) => setValor(e.target.value)}
+          placeholder="Digite um valor"
+        />
+      </div>
+
+      <div>
+        <label>Moeda de origem:</label>
+        <select
+          value={origem}
+          onChange={(e) => setOrigem(e.target.value)}
+        >
+          <option value="BRL">Real (BRL)</option>
+          <option value="USD">Dólar (USD)</option>
+          <option value="EUR">Euro (EUR)</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Moeda de destino:</label>
+        <select
+          value={destino}
+          onChange={(e) => setDestino(e.target.value)}
+        >
+          <option value="BRL">Real (BRL)</option>
+          <option value="USD">Dólar (USD)</option>
+          <option value="EUR">Euro (EUR)</option>
+        </select>
+      </div>
+
+      <button onClick={() => alert(
+        `Converter ${valor} ${origem} para ${destino}`
+      )}>
+        Converter
+      </button>
+    </main>
   )
 }
 
