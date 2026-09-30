@@ -259,12 +259,6 @@ Todo uso relevante de IA será registrado nesta seção, permitindo documentar c
 
 A utilização de IA não substitui a responsabilidade dos integrantes sobre o código desenvolvido. Todo código, sugestão ou conteúdo gerado deverá ser analisado, testado e compreendido pela equipe antes de ser incorporado ao projeto.
 
-### 📋 Registro de utilização
-
-| Data | Integrante | Ferramenta | Finalidade | Utilização |
-|---|---|---|---|---|
-| --/--/2026 | -- | -- | -- | -- |
-
 ### 📝 Como registrar
 
 A cada utilização relevante de IA, registrar:
@@ -279,7 +273,7 @@ A cada utilização relevante de IA, registrar:
 
 | Data | Integrante | Ferramenta | Finalidade | Utilização |
 |---|---|---|---|---|
-| 17/09/2026 | João Antonio | xx | xx| xx |
+| 30/09/2026 | João Antonio | ChatGPT | Criação do README.md | Criar README com informações do projeto |
 | 18/09/2026 | Diogo | xx | xx | xx |
 
 ### ⚠️ Responsabilidade sobre o código
