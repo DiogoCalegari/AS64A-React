@@ -13,7 +13,7 @@ entre páginas.
 
 ## 👥 Integrantes
 
-  Integrante                          RA
+  Integrante                          RA <br>
   Diogo Calegari dos Reis        2766973 <br>
   João Antonio Carboni Gomes     2767058
 
