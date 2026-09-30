@@ -89,28 +89,6 @@ Fonte para consulta de APIs públicas:
 
 ------------------------------------------------------------------------
 
-## 📌 Funcionalidades
-
-As funcionalidades serão implementadas de forma integrada em uma única
-aplicação.
-
-Entre os recursos previstos estão:
-
--   [ ] Consumo da API JSON
--   [ ] Exibição dos dados obtidos
--   [ ] Pesquisa/filtragem de informações
--   [ ] Interação com os dados apresentados
--   [ ] Atualização dinâmica da interface
--   [ ] Utilização do Hook/funcionalidade escolhida
--   [ ] Utilização da biblioteca externa escolhida
--   [ ] Tratamento de erros de comunicação com a API
--   [ ] Interface responsiva
-
-> A lista deverá ser atualizada conforme as funcionalidades forem
-> implementadas.
-
-------------------------------------------------------------------------
-
 ## 🧩 Estrutura do projeto
 
 A estrutura poderá seguir uma organização semelhante a:
@@ -253,6 +231,7 @@ A cada utilização relevante de IA, registrar:
 | Data | Integrante | Ferramenta | Finalidade | Utilização |
 |---|---|---|---|---|
 | 30/09/2026 | João Antonio | ChatGPT | Criação do README.md | Criar README com informações do projeto |
+| 30/09/2026 | João Antonio | ChatGPT | Criar inteface do projeto (básico) | Ferramenta de IA para estilização da página de conversão de moedas |
 | 18/09/2026 | Diogo | xx | xx | xx |
 
 ### ⚠️ Responsabilidade sobre o código
