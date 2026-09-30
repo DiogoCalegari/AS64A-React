@@ -78,7 +78,8 @@ Algumas possibilidades:
 
 ## 🌐 API utilizada
 
-> **A definir.**
+  **Fixer Api de Conversão de Moedas**
+> **https://fixer.io/**
 
 A aplicação utilizará uma **API JSON aberta** para obtenção dos dados
 apresentados e manipulados pelo sistema.
