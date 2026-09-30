@@ -83,6 +83,7 @@ Algumas possibilidades:
 
 A aplicação utilizará uma **API JSON aberta** para obtenção dos dados
 apresentados e manipulados pelo sistema.
+=======
 
 Fonte para consulta de APIs públicas:
 
@@ -231,9 +232,9 @@ A cada utilização relevante de IA, registrar:
 
 | Data | Integrante | Ferramenta | Finalidade | Utilização |
 |---|---|---|---|---|
-| 30/09/2026 | João Antonio | ChatGPT | Criação do README.md | Criar README com informações do projeto |
+| 29/09/2026 | João Antonio | ChatGPT | Criação do README.md | Criar README com informações do projeto |
 | 30/09/2026 | João Antonio | ChatGPT | Criar inteface do projeto (básico) | Ferramenta de IA para estilização da página de conversão de moedas |
-| 18/09/2026 | Diogo | xx | xx | xx |
+| 30/09/2026 | Diogo | Copilot | Ajudar a criar o server.js e o uso da key API |
 
 ### ⚠️ Responsabilidade sobre o código
 
