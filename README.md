@@ -234,7 +234,7 @@ A cada utilização relevante de IA, registrar:
 |---|---|---|---|---|
 | 29/09/2026 | João Antonio | ChatGPT | Criação do README.md | Criar README com informações do projeto |
 | 30/09/2026 | João Antonio | ChatGPT | Criar inteface do projeto (básico) | Ferramenta de IA para estilização da página de conversão de moedas |
-| 30/09/2026 | Diogo | Copilot | Ajudar a criar o server.js e o uso da key API |
+| 30/09/2026 | Diogo | Copilot | Ajudar a criar o server.js e o uso da key API | Criação do server.js
 
 ### ⚠️ Responsabilidade sobre o código
 
