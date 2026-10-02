@@ -210,7 +210,7 @@ As sugestões fornecidas foram analisadas e testadas pelos integrantes antes de 
 | Data | Integrante | Ferramenta | Finalidade | Utilização |
 |---|---|---|---|---|
 | 30/09/2026 | João Antonio | ChatGPT | Desenvolvimento da interface | Apoio na criação da interface inicial do conversor utilizando React |
-| 30/09/2026 | Diogo | GitHub Copilot | Desenvolvimento | Apoio na escrita do código do servidor e configuração inicial da API, durante a etapa em que se considerava utilizar back-end |
+| 30/09/2026 | Diogo | GitHub Copilot | Desenvolvimento | Apoio na escrita do código do servidor e configuração inicial da API |
 | 02/10/2026 | João Antonio | ChatGPT | Integração com API | Apoio na adaptação do código para consumir diretamente a Frankfurter API pelo React |
 | 02/10/2026 | João Antonio | ChatGPT | Documentação | Atualização do README de acordo com as tecnologias e funcionalidades utilizadas |
 
