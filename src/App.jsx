@@ -1,3 +1,4 @@
+
 import { useState } from 'react'
 import './App.css'
 
@@ -18,22 +19,36 @@ function App() {
       return
     }
 
+    if (origem === destino) {
+      setResultado(Number(valor))
+      return
+    }
+
     setCarregando(true)
 
     try {
       const parametros = new URLSearchParams({
-        amount: valor,
-        from: origem,
-        to: destino,
+        base: origem,
+        symbols: destino,
       })
-      const resposta = await fetch(`/api/convert?${parametros}`)
+
+      const resposta = await fetch(
+        `https://api.frankfurter.dev/v1/latest?${parametros}`
+      )
+
       const dados = await resposta.json()
 
       if (!resposta.ok) {
-        throw new Error(dados.error || 'Não foi possível converter o valor.')
+        throw new Error('Não foi possível consultar as taxas de câmbio.')
       }
 
-      setResultado(dados.convertedAmount)
+      const taxa = dados.rates[destino]
+
+      if (taxa === undefined) {
+        throw new Error('Taxa de câmbio não encontrada.')
+      }
+
+      setResultado(Number(valor) * taxa)
     } catch (erro) {
       setErro(erro.message || 'Erro ao consultar a API.')
     } finally {
@@ -85,6 +100,7 @@ function App() {
       </button>
 
       {erro && <p role="alert">{erro}</p>}
+
       {resultado !== null && (
         <p>
           Resultado: {new Intl.NumberFormat('pt-BR', {
