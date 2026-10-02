@@ -79,9 +79,7 @@ A conversão é realizada com base na taxa retornada pela API e no valor informa
 
 ### Moedas disponíveis
 
-- Real (BRL)
-- Dólar (USD)
-- Euro (EUR)
+As moedas suportadas pela Frankfurter são carregadas automaticamente pela aplicação.
 
 ---
 
@@ -97,13 +95,13 @@ AS64A---React/
 │   ├── index.css
 │   └── main.jsx
 ├── .gitignore
+├── .onlintrc.json
 ├── index.html
 ├── package.json
 ├── package-lock.json
-└── README.md
+├── README.md
+└── vite.config.js
 ```
-
-A estrutura pode ser ajustada conforme a evolução do projeto.
 
 ---
 
@@ -118,7 +116,7 @@ git clone https://github.com/DiogoCalegari/AS64A---React.git
 ### 2. Acessar a pasta do projeto
 
 ```bash
-cd AS64A---React
+cd AS64A-React
 ```
 
 ### 3. Instalar as dependências
@@ -186,7 +184,7 @@ O projeto contempla os seguintes requisitos:
 
 **Programação Web Full Stack — AS64A**
 
-**Professora:** Profa. Dra. Juliana Costa Silva  
+**Professora:** Dra. Juliana Costa Silva  
 **Instituição:** Universidade Tecnológica Federal do Paraná (UTFPR)
 
 ---
@@ -213,6 +211,7 @@ As sugestões fornecidas foram analisadas e testadas pelos integrantes antes de 
 | 30/09/2026 | Diogo | GitHub Copilot | Desenvolvimento | Apoio na escrita do código do servidor e configuração inicial da API |
 | 02/10/2026 | João Antonio | ChatGPT | Integração com API | Apoio na adaptação do código para consumir diretamente a Frankfurter API pelo React |
 | 02/10/2026 | João Antonio | ChatGPT | Documentação | Atualização do README de acordo com as tecnologias e funcionalidades utilizadas |
+| 02/10/2026 | Diogo | GitHub Copilot | Desenvolvimento | Mudança da API Fixer para Frankfurter e aumento de moedas disponiveis para conversãoe ordenação alfabética |
 
 ### Responsabilidade sobre o código
 

@@ -1,14 +1,53 @@
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 
+const moedasPadrao = {
+  BRL: 'Real brasileiro',
+  USD: 'Dólar americano',
+  EUR: 'Euro',
+}
+
+const nomesMoedas = new Intl.DisplayNames(['pt-BR'], { type: 'currency' })
+
 function App() {
+  const [moedas, setMoedas] = useState(moedasPadrao)
   const [valor, setValor] = useState('')
   const [origem, setOrigem] = useState('BRL')
   const [destino, setDestino] = useState('USD')
   const [resultado, setResultado] = useState(null)
   const [erro, setErro] = useState('')
   const [carregando, setCarregando] = useState(false)
+
+  useEffect(() => {
+    let ignorarResposta = false
+
+    async function carregarMoedas() {
+      try {
+        const resposta = await fetch('https://api.frankfurter.dev/v1/currencies')
+
+        if (!resposta.ok) {
+          throw new Error('Não foi possível carregar as moedas.')
+        }
+
+        const dados = await resposta.json()
+
+        if (!ignorarResposta) {
+          setMoedas(dados)
+        }
+      } catch {
+        if (!ignorarResposta) {
+          setMoedas(moedasPadrao)
+        }
+      }
+    }
+
+    carregarMoedas()
+
+    return () => {
+      ignorarResposta = true
+    }
+  }, [])
 
   async function converter() {
     setErro('')
@@ -77,9 +116,16 @@ function App() {
           value={origem}
           onChange={(e) => setOrigem(e.target.value)}
         >
-          <option value="BRL">Real (BRL)</option>
-          <option value="USD">Dólar (USD)</option>
-          <option value="EUR">Euro (EUR)</option>
+          {Object.keys(moedas).sort((codigoA, codigoB) =>
+            (nomesMoedas.of(codigoA) || moedas[codigoA]).localeCompare(
+              nomesMoedas.of(codigoB) || moedas[codigoB],
+              'pt-BR'
+            )
+          ).map((codigo) => (
+            <option key={codigo} value={codigo}>
+              {nomesMoedas.of(codigo) || moedas[codigo]} ({codigo})
+            </option>
+          ))}
         </select>
       </div>
 
@@ -89,9 +135,16 @@ function App() {
           value={destino}
           onChange={(e) => setDestino(e.target.value)}
         >
-          <option value="BRL">Real (BRL)</option>
-          <option value="USD">Dólar (USD)</option>
-          <option value="EUR">Euro (EUR)</option>
+          {Object.keys(moedas).sort((codigoA, codigoB) =>
+            (nomesMoedas.of(codigoA) || moedas[codigoA]).localeCompare(
+              nomesMoedas.of(codigoB) || moedas[codigoB],
+              'pt-BR'
+            )
+          ).map((codigo) => (
+            <option key={codigo} value={codigo}>
+              {nomesMoedas.of(codigo) || moedas[codigo]} ({codigo})
+            </option>
+          ))}
         </select>
       </div>
 
